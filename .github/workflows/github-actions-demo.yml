@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-on: [push]
+on: [push, pull request]
 jobs:
   TestApplication:
     runs-on: ubuntu-latest
@@ -15,5 +15,5 @@ jobs:
           distribution: 'adopt'
       - name: Effectuer les tests
         run: mvn test
-        
+
 
